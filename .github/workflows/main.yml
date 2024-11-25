@@ -24,6 +24,7 @@ jobs:
         run: |
           npm install
           npm run build
+        working-directory: .vue-app
 
       # Deploy to Azure Web App
       - name: Deploy to Azure Web App
@@ -32,4 +33,4 @@ jobs:
           app-name: 'PortfolioTonyPham'  # Replace with your Azure Web App name
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: './dist'  # Location of the production build files
+          package: './vue-app/dist'  # Location of the production build files
