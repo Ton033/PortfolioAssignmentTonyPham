@@ -24,7 +24,7 @@ jobs:
         run: |
           npm install
           npm run build
-        working-directory: .vue-app
+        working-directory: vue-app
 
       # Deploy to Azure Web App
       - name: Deploy to Azure Web App
