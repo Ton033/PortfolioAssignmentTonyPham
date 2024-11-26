@@ -27,10 +27,14 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        run: npm install
+        run: |
+          cd vue-app
+          npm install
 
       - name: Run Unit Tests
-        run: npm run test:unit
+        run: |
+          cd vue-app
+          npm run test:unit
 
       - name: Build And Deploy
         id: builddeploy
