@@ -34,7 +34,7 @@ jobs:
       - name: Run Unit Tests
         run: |
           cd vue-app
-          npm run test:unit
+          npm run test
 
       - name: Build And Deploy
         id: builddeploy
