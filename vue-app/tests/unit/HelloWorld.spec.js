@@ -12,7 +12,7 @@ describe('HelloWorld.vue', () => {
 
   it('has a link to Vue CLI documentation', () => {
     const wrapper = shallowMount(HelloWorld, {
-      props: { msg: 'Test Message' }, // Updated for Vue 3
+      props: { msg: 'Test Message' },
     });
     const link = wrapper.find('a[href="https://cli.vuejs.org"]');
     expect(link.exists()).toBe(true);
