@@ -1,6 +1,16 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true,
-  publicPath: './',
-  outputDir: 'dist',
-})
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import path from 'path';
+
+export default defineConfig({
+  plugins: [vue()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'), 
+    },
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom', 
+  },
+});
