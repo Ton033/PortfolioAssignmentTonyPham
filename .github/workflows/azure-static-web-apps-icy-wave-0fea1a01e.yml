@@ -32,6 +32,11 @@ jobs:
           cd vue-app
           npm run test
 
+      - name: Build Project
+        run: |
+          cd vue app
+          npm run build
+
       - name: Deploy
         id: deploy
         uses: Azure/static-web-apps-deploy@v1
