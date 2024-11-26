@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --cwd vue-app",
-    "build": "vue-cli-service build --cwd vue-app",
-    "lint": "vue-cli-service lint --cwd vue-app",
-    "test": "jest --config vue-app/jest.config.js", 
-    "test:coverage": "jest --coverage --config vue-app/jest.config.js"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test": "jest", 
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "core-js": "^3.8.3",
