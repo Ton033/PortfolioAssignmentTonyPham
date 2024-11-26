@@ -34,7 +34,7 @@ jobs:
 
       - name: Build Project
         run: |
-          cd vue app
+          cd vue-app
           npm run build
 
       - name: Deploy
