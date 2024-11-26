@@ -28,12 +28,10 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          cd vue-app
           npm install
 
       - name: Run Unit Tests
         run: |
-          cd vue-app
           npm run test
 
       - name: Build And Deploy
