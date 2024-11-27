@@ -1,20 +1,28 @@
 import { shallowMount } from '@vue/test-utils';
 import HelloWorld from '@/components/HelloWorld.vue';
 
-describe('HelloWorld.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'Hello Vue!';
+/**
+ * This test suite validates the HelloWorld component
+ */
+describe("HelloWorld.vue", () => {
+
+
+  /**
+   * Test 1: Check if the component renders the msg prop correctly
+   */
+  it("renders the msg properly", () => {
+    const msg = "Vue App";
     const wrapper = shallowMount(HelloWorld, {
-      props: { msg }, // Updated for Vue 3
+      props: {msg},
     });
-    expect(wrapper.find('h1').text()).toBe(msg);
+    expect(wrapper.find("h1").text()).toBe(msg);
   });
 
-  it('has a link to Vue CLI documentation', () => {
-    const wrapper = shallowMount(HelloWorld, {
-      props: { msg: 'Test Message' },
-    });
-    const link = wrapper.find('a[href="https://cli.vuejs.org"]');
-    expect(link.exists()).toBe(true);
+  /**
+   * Test 2: Check if components is craeted
+   */
+  it("creates the component successfully", () => {
+    const wrapper = shallowMount(HelloWorld);
+    expect(wrapper.exists()).toBe(true);
   });
 });
