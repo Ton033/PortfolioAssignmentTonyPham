@@ -1,17 +1,11 @@
 # IDATA2502 Portfolio Assignment
 
-## Project setup
-```
-npm install
-```
+This project is a part of the exam portofolio.
+It focuses on the deployment of a vue.js, using a CI/CD delivery pipeline.
+The application is made with Vue and deployed to Microsoft Azure.
+The pipeline is implemented using GitHub Actions, which test, build and deploy the application.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
+# This project features:
+- Automated testing using Jest
+- Continuous integration and deployment triggered on every push to the main branch.
+- Deployment to Azure Static Web Apps
