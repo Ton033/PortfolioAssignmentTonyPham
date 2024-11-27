@@ -13,9 +13,6 @@ jobs:
     steps:
       - name: Checkout Repository Code
         uses: actions/checkout@v3
-        with:
-          submodules: true
-          lfs: false
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -27,7 +24,7 @@ jobs:
           cd vue-app
           npm install
 
-      - name: Run Unit Tests for Vue App
+      - name: Run Unit Tests
         run: |
           cd vue-app
           npm run test
