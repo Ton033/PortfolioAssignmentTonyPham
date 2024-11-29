@@ -5,6 +5,9 @@ It focuses on the deployment of a vue.js, using a CI/CD delivery pipeline.
 The application is made with Vue and deployed to Microsoft Azure.
 The pipeline is implemented using GitHub Actions, which test, build and deploy the application.
 
+Repository:
+https://github.com/Ton033/PortfolioTonyPham
+
 The app in browser:
 https://icy-wave-0fea1a01e.5.azurestaticapps.net/
 
